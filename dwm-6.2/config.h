@@ -8,11 +8,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#222222";
+static const char col_gray1[]       = "#1F1F1F";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#DBD6D1";
-static const char col_cyan[]        = "#826D57";
+static const char col_gray3[]       = "#C0B18B";
+static const char col_gray4[]       = "#C0B18B";
+static const char col_cyan[]        = "#535C5C";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -71,7 +71,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_r,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_Return, zoom,           {0} },
+	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,             		XK_w,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
@@ -96,6 +96,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_8,      spawn,          SHCMD("brave") },
 	{ MODKEY,                       XK_7,      spawn,          SHCMD("alacritty -e lf") },
 	{ MODKEY,                       XK_6,      spawn,          SHCMD("alacritty -e mocp") },
+	{ MODKEY,                       XK_5,      spawn,          SHCMD("telegram-desktop") },
 
 	/* Change volume and language */
 	{ MODKEY,                       XK_equal,  spawn,          SHCMD("pulsemixer --change-volume +2") },
