@@ -105,8 +105,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_0,      spawn,          SHCMD("setxkbmap ru") },
 
 	/* Capture screenshots */
-	{ MODKEY,                       XK_F12,    spawn,          SHCMD("flameshot full -p /home/shamil/Pictures/") },
-	{ MODKEY,                       XK_F11,    spawn,          SHCMD("flameshot gui -p /home/shamil/Pictures/") },
+	{ MODKEY,                       XK_F12,    spawn,          SHCMD("flameshot full -p /home/user/Pictures/") },
+	{ MODKEY,                       XK_F11,    spawn,          SHCMD("flameshot gui -p /home/user/Pictures/") },
 };
 
 /* button definitions */
