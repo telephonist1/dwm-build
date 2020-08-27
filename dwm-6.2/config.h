@@ -8,11 +8,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#1F1F1F";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#C0B18B";
-static const char col_gray4[]       = "#C0B18B";
-static const char col_cyan[]        = "#535C5C";
+static const char col_gray1[]       = "#252C31";
+static const char col_gray2[]       = "#252C31";
+static const char col_gray3[]       = "#EBDBBD";
+static const char col_gray4[]       = "#EBDBBD";
+static const char col_cyan[]        = "#736867";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -105,8 +105,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_0,      spawn,          SHCMD("setxkbmap ru") },
 
 	/* Capture screenshots */
-	{ MODKEY,                       XK_F12,    spawn,          SHCMD("flameshot full -p /home/user/Pictures/") },
-	{ MODKEY,                       XK_F11,    spawn,          SHCMD("flameshot gui -p /home/user/Pictures/") },
+	{ MODKEY,                       XK_F12,    spawn,          SHCMD("flameshot full -p /home/shamil/Pictures/") },
+	{ MODKEY,                       XK_F11,    spawn,          SHCMD("flameshot gui -p /home/shamil/Pictures/") },
 };
 
 /* button definitions */
