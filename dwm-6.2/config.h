@@ -93,7 +93,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	
 	/* Launch apps */
-	{ MODKEY,                       XK_8,      spawn,          SHCMD("brave") },
+	{ MODKEY,                       XK_8,      spawn,          SHCMD("firefox") },
 	{ MODKEY,                       XK_7,      spawn,          SHCMD("alacritty -e lf") },
 	{ MODKEY,                       XK_6,      spawn,          SHCMD("alacritty -e mocp") },
 	{ MODKEY,                       XK_5,      spawn,          SHCMD("telegram-desktop") },
@@ -101,8 +101,8 @@ static Key keys[] = {
 	/* Change volume and language */
 	{ MODKEY,                       XK_equal,  spawn,          SHCMD("pulsemixer --change-volume +2") },
 	{ MODKEY,                       XK_minus,  spawn,          SHCMD("pulsemixer --change-volume -2") },
-	{ MODKEY,                       XK_9,      spawn,          SHCMD("setxkbmap us") },
-	{ MODKEY,                       XK_0,      spawn,          SHCMD("setxkbmap ru") },
+	{ MODKEY,                       XK_F5,     spawn,          SHCMD("setxkbmap us; xmodmap ~/.speedswapper") },
+	{ MODKEY,                       XK_F6,     spawn,          SHCMD("setxkbmap ru") },
 
 	/* Capture screenshots */
 	{ MODKEY,                       XK_F12,    spawn,          SHCMD("flameshot full -p /home/shamil/Pictures/") },
